@@ -6,21 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Matcheadas by Sa Mur</title>
 
 </head>
 <body>
-    <div class="cover"></div>
+    <!-- <div id="background-image-container">
+        <img id="background-image" src="background-image.svg" alt="">
+    </div> -->
+    <div class="div-cover">
+        <div class="modal" id="welcome-div">
+            <h2 class="title">Welcome!</h2>
+            <div class="sign">
+                <p class="text-content">
+                    In this game, your goal is to match three or more items of the same kind,<br> either in row or column. To do it, select an item and then the adjacent item to swap places.
+                </p>
+                <p class="text-content">
+                    If you create a group of items, those items will be removed and you will earn points.<br>
+                    Keep making groups of three elements or more before the time runs out!
+                </p>
+                <h3 class="secondary-title">Controls</h3>
+                <p class="text-content">
+                    Left click: select
+                </p class="text-content">
+                <p class="text-content">
+                    Enter or space: select
+                </p class="text-content">
+                <p class="text-content">
+                    Arrows or WASD: move and swap
+                </p>
+            </div>
+            <div class="sign-buttons" id="start-game-div">
+                <button class="button-sign">START GAME</button>
+                <!-- <button>New game</button>
+                <button>Reset</button> -->
+            </div>
+        </div>
+        <div class="modal">
+            <h2 class="title">New game</h2>
+            <div class="sign">
+                <p class="text-content">Select a difficulty level</p>
+                <button class="button-sign">BEGINNER</button><button class="button-sign">INTERMEDIATE</button><button class="button-sign">EXPERT</button>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="title"></div>
+        <div class="main-title"></div>
         <div class="control-panel">
             <div class="score"></div>
             <div class="help-reset-container">
-                <button class="button-help"></button>
-                <button class="button-reset"></button>
+                <button class="button-control"></button>
+                <button class="button-control"></button>
             </div>
         </div>
+        <div class="grid-container"></div>
     </div>
 
 
